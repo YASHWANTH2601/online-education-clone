@@ -2,16 +2,13 @@
 
 ## 📋 Project Overview
 
-This is a **React** frontend application designed to [briefly explain the purpose of your project, e.g., "manage tasks effectively," "display a list of products," or "serve as a booking platform"]. The project implements responsive UI, efficient state management, and reusable components to ensure a seamless user experience.
+This is a **React** frontend application designed. The project implements responsive UI, efficient state management, and reusable components to ensure a seamless user experience.
 
 ---
 
 ## 🚀 Features
 
 - [Feature 1: e.g., User-friendly interface]
-- [Feature 2: e.g., Form validation]
-- [Feature 3: e.g., Responsive design]
-- [Add more features as applicable...]
 
 ---
 
@@ -19,10 +16,8 @@ This is a **React** frontend application designed to [briefly explain the purpos
 
 - **ReactJS**: Component-based UI development
 - **React Router**: For single-page application (SPA) navigation
-- **Axios/Fetch API**: To make HTTP requests
+
 - **CSS/Bootstrap/Material-UI**: For styling and UI components
-- **Redux/Zustand/Context API** (if applicable): State management
-- [Add any other libraries or frameworks used]
 
 ---
 
@@ -40,7 +35,7 @@ Follow the steps below to run this project locally:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/YASHWANTH2601/online-education-clone.git
    cd your-repo-name
    ```
 
