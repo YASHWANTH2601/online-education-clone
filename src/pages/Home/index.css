@@ -1,0 +1,160 @@
+.homeSecondContainer {
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+.homeSecondContainerLeft {
+  margin-bottom: 20px;
+}
+.homeSecondContainerLeftH2 {
+  font-size: 35px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.homeSecondContainerLeftH4 {
+  font-size: 30px;
+  width: 500px;
+  margin-left: 60px;
+  margin-bottom: 25px;
+}
+.homeSecondContainerLeftP {
+  width: 600px;
+  margin-left: 10px;
+  margin-bottom: 60px;
+}
+.reded {
+  color: #e62129;
+}
+.studentTaughtContainer {
+  border-radius: 20px;
+  padding: 30px 10px;
+  margin-bottom: 20px;
+  width: 90vw;
+  box-shadow: 0px 4px 15px 0px rgba(102, 118.00000000000009, 255, 0.33);
+}
+
+.homeThirdContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.homeThirdContainerLeft {
+  margin-bottom: 30px;
+}
+.homeThirdContainerButton {
+  background-color: #272727;
+  border-radius: 18px;
+  color: white;
+  padding: 14px 30px 14px 30px;
+  align-self: flex-start;
+}
+.homeFourthContainer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeFourthContainerH5 {
+  font-size: 30px;
+}
+.homeFourthContainerH1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.homeFourthContainerP {
+  width: 600px;
+  margin-bottom: 30px;
+}
+.homeFourthContainerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeFifthContainer {
+  background-image: linear-gradient(90deg, #45c3cd 0%, #c2f5d273 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 40px;
+}
+.studentsuccess {
+  background-color: white;
+  width: 80vw;
+  margin: 0px auto;
+  border-radius: 20px;
+  box-shadow: -1px 4px 15px 0px rgba(102, 118.00000000000009, 255, 0.33);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeFifthContainerH1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 760px) {
+  .homeSecondContainer {
+    width: 100vw;
+    /* margin-left: 0px; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeSecondContainerLeftH2 {
+    width: 600px;
+    font-size: 50px;
+  }
+  .homeSecondContainerLeftH4 {
+    margin-left: 10px;
+    margin-right: 40px;
+    width: 600px;
+    font-size: 35px;
+  }
+  .homeSecondContainerLeftP {
+    margin-top: 20px;
+  }
+  .studentTaughtContainer {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .homeThirdContainer {
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+  }
+  .homeThirdContainerLeft {
+    width: 500px;
+    margin-right: 70px;
+    margin-bottom: 0px;
+  }
+  .homeThirdContainerH1 {
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .homeThirdContainerP {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .homeFourthContainerRight {
+    display: flex;
+    flex-direction: row;
+  }
+  .studentsuccess {
+    height: 200px;
+    flex-direction: row;
+    width: 600px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 20px; */
+    padding: 15px;
+  }
+}

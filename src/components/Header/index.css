@@ -1,0 +1,58 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 200px;
+  background-color: #dd3333;
+  color: white;
+  height: 45px;
+}
+.logo {
+  height: 70px;
+  width: 150px;
+}
+.androidButton {
+  border: 1px solid #dd3333;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  border-radius: 10px;
+}
+.androidButton:hover {
+  background-color: #dd3333;
+}
+.marquee {
+  height: 50px;
+  padding: 16px 0px;
+  background-image: linear-gradient(90deg, #45c3cd 0%, #8e54e9 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+@media screen and (min-width: 990px) {
+  .mobileView {
+    display: none;
+  }
+  .desktopView {
+    display: block;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 180px;
+    background-color: #fff9eb;
+  }
+}
+@media screen and (max-width: 990px) {
+  .mobileView {
+    display: block;
+  }
+  .desktopView {
+    display: none;
+  }
+}
