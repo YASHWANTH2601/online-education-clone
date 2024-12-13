@@ -3,6 +3,8 @@ import React from "react";
 import "./index.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Dashboard from "../Dashboard";
+
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -21,9 +23,14 @@ const responsive = {
   // },
 };
 const Home = () => {
+  const [edit, setEdit] = React.useState(false);
+  const eaditing = () => {
+    setEdit(!edit);
+  };
+
   return (
     <div>
-      <div>
+      <div style={{ width: "100%" }}>
         <Carousel
           swipeable={false}
           draggable={false}
@@ -169,38 +176,11 @@ const Home = () => {
           </p>
         </div>
         <div className="homeFourthContainerRight">
-          <div>
-            <iframe
-              width="560"
-              className="me-5"
-              height="315"
-              src="https://www.youtube.com/embed/ePvVo2vLyu8?si=1djPS0Z9WEleO0kq"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <p style={{ fontSize: "20px" }}>
-              10th Board Exam 2023-24 Testimonials
-            </p>
-          </div>
-          <div>
-            <iframe
-              className="me-5"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/hWYvjtpIQF4?si=fUFg6gNhdiPDKcpp"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <p style={{ fontSize: "20px" }}>
-              Aditya Sahai Testimonial - Selected in BITS 2024
-            </p>
-          </div>
+          <button className="btn btn-primary mb-4" onClick={eaditing}>
+            edit
+          </button>
+
+          <Dashboard edit={edit} />
         </div>
       </section>
       <section className="homeFifthContainer">

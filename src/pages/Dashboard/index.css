@@ -1,0 +1,33 @@
+.video-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.video-titles {
+  width: 300px;
+  font-size: 20px;
+}
+.video-title {
+  width: 240px;
+  font-size: 10px;
+}
+.video-titleContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 760px) {
+  .video-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .video-list > li {
+    margin-right: 20px;
+  }
+}
