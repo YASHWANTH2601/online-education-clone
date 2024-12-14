@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { v4 as uuidv4 } from "uuid";
 import { MdDeleteOutline } from "react-icons/md";

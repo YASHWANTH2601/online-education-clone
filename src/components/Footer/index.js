@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footerRight">
-          <div>
+          <div className="footerLinks">
             <h1 className="footerheaders">Useful links</h1>
             <ul className="footerList">
               <li>Class 12 PCM Crash Course (CBSE/ICSE)</li>
@@ -46,7 +46,7 @@ const Footer = () => {
               <li>NEET Droppers Batch</li>
             </ul>
           </div>
-          <div>
+          <div className="footerLinks">
             <h1 className="footerheaders">Popular Courses</h1>
             <ul className="footerList">
               <li>Foundation</li>
@@ -55,7 +55,7 @@ const Footer = () => {
               <li>Yoga and Meditation</li>
             </ul>
           </div>
-          <div>
+          <div className="footerLinks">
             <h1 className="footerheaders">Help & Support</h1>
             <ul className="footerList">
               <li>About Us</li>

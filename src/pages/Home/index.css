@@ -1,3 +1,12 @@
+.carousel-container {
+  width: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
 .homeSecondContainer {
   padding: 50px 20px 50px 20px;
   display: flex;
@@ -14,13 +23,14 @@
 }
 .homeSecondContainerLeftH4 {
   font-size: 30px;
-  width: 500px;
+  /* width: 400px; */
+  width: 100%;
   /* margin-left: 60px; */
   margin-bottom: 25px;
   text-align: left;
 }
 .homeSecondContainerLeftP {
-  width: 600px;
+  width: 100%;
   margin-left: 10px;
   margin-bottom: 60px;
 }
@@ -65,7 +75,8 @@
   margin-bottom: 30px;
 }
 .homeFourthContainerP {
-  width: 600px;
+  margin: 0px auto;
+  width: 400px;
   margin-bottom: 30px;
 }
 /* .homeFourthContainerRight {
@@ -99,12 +110,18 @@
   font-size: 20px;
   text-align: center;
 }
+.videoContainer {
+  width: 400px;
+}
 
 @media screen and (min-width: 760px) {
+  .videoContainer {
+    width: 600px;
+  }
   .homeSecondContainer {
-    width: 100vw;
+    width: 100%;
     /* margin-left: 0px; */
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -153,15 +170,22 @@
     flex-direction: row;
   } */
   .studentsuccess {
-    height: 200px;
     flex-direction: row;
+    max-width: 600px;
     width: 700px;
-    height: 300px;
+    height: 250px;
     margin-right: 20px;
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     /* padding-left: 20px; */
-    padding: 15px;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .homeSecondContainer {
+    display: flex;
+    flex-direction: row;
   }
 }

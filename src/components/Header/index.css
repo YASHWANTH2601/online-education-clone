@@ -26,6 +26,7 @@
   background-color: #dd3333;
 }
 .marquee {
+  width: 100%;
   height: 50px;
   padding: 16px 0px;
   background-image: linear-gradient(90deg, #45c3cd 0%, #8e54e9 100%);

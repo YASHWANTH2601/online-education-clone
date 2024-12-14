@@ -5,22 +5,12 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Dashboard from "../Dashboard";
 import { TiTick } from "react-icons/ti";
+import ReactPlayer from "react-player";
 const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+  allDevices: {
+    breakpoint: { max: 4000, min: 0 },
     items: 1,
-    slidesToSlide: 1, // optional, default to 1.
   },
-  // tablet: {
-  //   breakpoint: { max: 1024, min: 464 },
-  //   items: 1,
-  //   slidesToSlide: 1, // optional, default to 1.
-  // },
-  // mobile: {
-  //   breakpoint: { max: 464, min: 0 },
-  //   items: 1,
-  //   slidesToSlide: 1, // optional, default to 1.
-  // },
 };
 const Home = () => {
   const [edit, setEdit] = React.useState(false);
@@ -30,7 +20,7 @@ const Home = () => {
 
   return (
     <div>
-      <div style={{ width: "100%" }}>
+      <div>
         <Carousel
           swipeable={false}
           draggable={false}
@@ -49,31 +39,39 @@ const Home = () => {
           itemClass="carousel-item-padding-40-px"
         >
           <div>
-            <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226882/j8rpjfkienmkundb8zya.png" />
+            <img
+              src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226882/j8rpjfkienmkundb8zya.png"
+              alt="Carousel 1"
+              className="carousel-image"
+            />
           </div>
           <div>
-            <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226817/idyzp7ot0u05iijydyyp.png" />
+            <img
+              src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226817/idyzp7ot0u05iijydyyp.png"
+              alt="Carousel 2"
+              className="carousel-image"
+            />
           </div>
           <div>
-            <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226782/kqq2csdtdhstm2oli2i2.png" />
+            <img
+              src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226782/kqq2csdtdhstm2oli2i2.png"
+              alt="Carousel 3"
+              className="carousel-image"
+            />
           </div>
           <div>
-            <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226741/dyyr0yo9dnnn1mwhin8x.png" />
+            <img
+              src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226741/dyyr0yo9dnnn1mwhin8x.png"
+              alt="Carousel 4"
+              className="carousel-image"
+            />
           </div>
           <div>
-            <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226711/vmnfyrhilgcklodne3w5.png" />
-          </div>
-          <div>
-            <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226681/npvw0wbldrzh58sawqc1.png" />
-          </div>
-          <div>
-            <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226660/af3ha7ylvo0hlzamdlve.png" />
-          </div>
-          <div>
-            <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226549/xnjbfcs2x7euyjvialou.png" />
-          </div>
-          <div>
-            <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226315/rjfqaczzd3yzylvi9a8z.png" />
+            <img
+              src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733226711/vmnfyrhilgcklodne3w5.png"
+              alt="Carousel 5"
+              className="carousel-image"
+            />
           </div>
         </Carousel>
       </div>
@@ -90,7 +88,7 @@ const Home = () => {
             <span className="reded"> expert guidance</span>.
           </h4>
         </div>
-        <div>
+        <div className="">
           <p className="homeSecondContainerLeftP">
             Welcome to 100 Plus Academy, where we are dedicated to nurturing
             academic excellence and fostering a love for learning. Our expert
@@ -153,7 +151,7 @@ const Home = () => {
         </div>
         <div>
           <iframe
-            width="560"
+            className="videoContainer"
             height="315"
             src="https://www.youtube.com/embed/znFt1gO-ROE?si=ol1fq11TLSeMZlbR"
             title="YouTube video player"
