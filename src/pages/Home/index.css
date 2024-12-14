@@ -9,14 +9,15 @@
 }
 .homeSecondContainerLeftH2 {
   font-size: 35px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 30px;
 }
 .homeSecondContainerLeftH4 {
   font-size: 30px;
   width: 500px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   margin-bottom: 25px;
+  text-align: left;
 }
 .homeSecondContainerLeftP {
   width: 600px;
@@ -85,7 +86,8 @@
 .studentsuccess {
   background-color: white;
   width: 80vw;
-  margin: 0px auto;
+  height: 300px;
+  margin: 20px auto;
   border-radius: 20px;
   box-shadow: -1px 4px 15px 0px rgba(102, 118.00000000000009, 255, 0.33);
   display: flex;
@@ -94,7 +96,8 @@
   align-items: center;
 }
 .homeFifthContainerH1 {
-  font-size: 30px;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media screen and (min-width: 760px) {
@@ -108,8 +111,10 @@
   .homeSecondContainerLeftH2 {
     width: 600px;
     font-size: 50px;
+    text-align: left;
   }
   .homeSecondContainerLeftH4 {
+    text-align: left;
     margin-left: 10px;
     margin-right: 40px;
     width: 600px;
@@ -150,7 +155,8 @@
   .studentsuccess {
     height: 200px;
     flex-direction: row;
-    width: 600px;
+    width: 700px;
+    height: 300px;
     margin-right: 20px;
     margin-bottom: 20px;
     justify-content: center;

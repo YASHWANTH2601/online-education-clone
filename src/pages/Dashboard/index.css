@@ -9,7 +9,11 @@
 }
 .video-title {
   width: 240px;
-  font-size: 10px;
+  /* font-size: 30px; */
+  font-size: 15px;
+  overflow: hidden;
+  height: 28px;
+  width: 240px;
 }
 .video-titleContainer {
   margin-top: 20px;

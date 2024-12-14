@@ -4,7 +4,7 @@ import "./index.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Dashboard from "../Dashboard";
-
+import { TiTick } from "react-icons/ti";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -177,7 +177,14 @@ const Home = () => {
         </div>
         <div className="homeFourthContainerRight">
           <button className="btn btn-primary mb-4" onClick={eaditing}>
-            edit
+            {edit ? (
+              <p className="mb-0">
+                <TiTick size={20} />
+                Done
+              </p>
+            ) : (
+              "Edit"
+            )}
           </button>
 
           <Dashboard edit={edit} />
@@ -196,7 +203,7 @@ const Home = () => {
         <div className=" w-75">
           <div className="d-flex flex-column  flex-md-row ">
             <div className="studentsuccess">
-              <div className="w-25 me-4">
+              <div className="w-50 ">
                 <h1 className="homeFifthContainerH1">Student Success</h1>
                 <img
                   className="w-25 w-md-50"
@@ -205,17 +212,13 @@ const Home = () => {
               </div>
               <div className="w-75">
                 <h5 className="m-0">8,000+</h5>
-                <p className="text-start">
-                  More than 8000 students successfully tutored
-                </p>
+                <p>More than 8000 students successfully tutored</p>
                 <h5>400+</h5>
-                <p className="text-start">
-                  200+ students achieved top ranks in national exams
-                </p>
+                <p>200+ students achieved top ranks in national exams</p>
               </div>
             </div>
             <div className="studentsuccess">
-              <div className="w-25 me-5">
+              <div className="w-50">
                 <h1 className="homeFifthContainerH1">
                   Competitive Exam Results
                 </h1>
@@ -226,19 +229,17 @@ const Home = () => {
               </div>
               <div className="w-75">
                 <h5 className="m-0">150+</h5>
-                <p className="text-start m-0">150+ students cleard IIT JEE</p>
+                <p className=" m-0">150+ students cleard IIT JEE</p>
                 <h5 className="m-0">230+</h5>
-                <p className="text-start m-0">100+ students cleared NEET</p>
+                <p className=" m-0">100+ students cleared NEET</p>
                 <h5 className="m-0">50+</h5>
-                <p className="text-start m-0">
-                  50+ students excelled in Olympiads
-                </p>
+                <p className=" m-0">50+ students excelled in Olympiads</p>
               </div>
             </div>
           </div>
           <div className="d-flex flex-column flex-md-row">
             <div className="studentsuccess">
-              <div className="w-25 me-4">
+              <div className="w-50 ">
                 <h1 className="homeFifthContainerH1">Academic excellence</h1>
                 <img
                   className="w-25"
@@ -247,15 +248,15 @@ const Home = () => {
               </div>
               <div className="w-75">
                 <h5 className="m-0">95%</h5>
-                <p className="text-start m-0">
+                <p className=" m-0">
                   95% of students scored above 90% in board exams
                 </p>
                 <h5>230+</h5>
-                <p className="text-start m-0">100+ students cleared NEET</p>
+                <p className=" m-0">100+ students cleared NEET</p>
               </div>
             </div>
             <div className="studentsuccess">
-              <div className="w-25 me-4">
+              <div className="w-50 ">
                 <h1 className="homeFifthContainerH1">Innovative Learning</h1>
                 <img
                   className="w-25 "
@@ -264,18 +265,18 @@ const Home = () => {
               </div>
               <div className="w-75">
                 <h5 className="m-0">100+</h5>
-                <p className="text-start m-0">
+                <p className=" m-0">
                   Implemented over 100 interactive learning modules
                 </p>
                 <h5>50+</h5>
-                <p className="text-start m-0">
+                <p className=" m-0">
                   Conducted 50+ workshops and seminars on innovative education
                 </p>
               </div>
             </div>
           </div>
           <div className="studentsuccess me-auto">
-            <div className="w-25 me-4">
+            <div className="w-50 ">
               <h1 className="homeFifthContainerH1">Community Impact</h1>
               <img
                 className="w-25"
@@ -284,11 +285,11 @@ const Home = () => {
             </div>
             <div className="w-75">
               <h5 className="m-0">20+</h5>
-              <p className="text-start m-0">
+              <p className=" m-0">
                 Taught students of 20+ schools for educational in the community
               </p>
               <h5 className="m-0">10,000+</h5>
-              <p className="text-start m-0">
+              <p className=" m-0">
                 Engaged with over 10,000 students through outreach programs
               </p>
             </div>

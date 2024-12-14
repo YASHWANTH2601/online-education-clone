@@ -4,11 +4,19 @@ import { v4 as uuidv4 } from "uuid";
 import { MdDeleteOutline } from "react-icons/md";
 import "./index.css";
 const Dashboard = ({ edit }) => {
-  const [videos, setVideos] = useState(() => {
-    // Retrieve saved videos from localStorage
-    const savedVideos = localStorage.getItem("videos");
-    return savedVideos ? JSON.parse(savedVideos) : [];
-  });
+  const [videos, setVideos] = useState([
+    {
+      id: "460fbb50-5380-4ec7-a768-122c7bfe9d8b",
+      title:
+        "Unnav Sharma - Cracked JEE (Mains+Advanced) 2024 & Advik - Cracked BITSAT 2024",
+      url: "https://youtu.be/zZjvVQEvsaw",
+    },
+    {
+      id: "3f0dc870-7d59-42d2-ba36-309f70d1544a",
+      title: "10th Board Exam 2023-24 testimonial",
+      url: "https://youtu.be/ePvVo2vLyu8?feature=shared",
+    },
+  ]);
   const [videoUrl, setVideoUrl] = useState("");
   const [title, setTitle] = useState("");
   const [showPopup, setShowPopup] = useState(false);
@@ -52,14 +60,12 @@ const Dashboard = ({ edit }) => {
     }
     // setVideos([...videos, newVideo]);
   };
+
   const deleteVideo = (id) => {
     const updatedVideos = videos.filter((video) => video.id !== id);
     setVideos(updatedVideos);
   };
-  useEffect(() => {
-    localStorage.setItem("videos", JSON.stringify(videos));
-  }, [videos]);
-  console.log(videos);
+
   return (
     <>
       {edit ? (
