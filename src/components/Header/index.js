@@ -31,7 +31,10 @@ const Header = () => {
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
                 <Link to="/">
-                  <img src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733234065/auxyl6nmupqost9dtgcb.png" />
+                  <img
+                    className="logos"
+                    src="https://res.cloudinary.com/dtnrcram4/image/upload/v1733234065/auxyl6nmupqost9dtgcb.png"
+                  />
                 </Link>
                 <button
                   class="navbar-toggler"

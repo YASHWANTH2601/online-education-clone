@@ -13,6 +13,10 @@
   height: 70px;
   width: 150px;
 }
+.logos {
+  height: 40px;
+  width: 90px;
+}
 .androidButton {
   border: 1px solid #dd3333;
   height: 60px;
